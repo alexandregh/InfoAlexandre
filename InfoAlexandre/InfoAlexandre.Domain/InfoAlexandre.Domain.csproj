@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C30A0318-9802-4F28-8BB5-488B713B2569}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>InfoAlexandre.Domain</RootNamespace>
+    <AssemblyName>InfoAlexandre.Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>InfoAlexandre.Domain.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>InfoAlexandre.Domain.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DomainServices\DomainServicesBases\DomainServicesBase.cs" />
+    <Compile Include="DomainServices\DomainServicesEntity\DomainServicesAdministradores\DomainServicesAdministrador.cs" />
+    <Compile Include="DomainServices\DomainServicesEntity\DomainServicesCategorias\DomainServicesCategoria.cs" />
+    <Compile Include="DomainServices\DomainServicesEntity\DomainServicesCursos\DomainServicesCurso.cs" />
+    <Compile Include="DomainServices\DomainServicesEntity\DomainServicesEventos\DomainServicesEvento.cs" />
+    <Compile Include="DomainServices\DomainServicesEntity\DomainServicesFormacoes\DomainServicesFormacao.cs" />
+    <Compile Include="DomainServices\DomainServicesEntity\DomainServicesGrupos\DomainServicesGrupo.cs" />
+    <Compile Include="Domain\Entity\Administradores.cs" />
+    <Compile Include="Domain\Entity\Categorias.cs" />
+    <Compile Include="Domain\Entity\Cursos.cs" />
+    <Compile Include="Domain\Entity\Educacao.cs" />
+    <Compile Include="Domain\Entity\Eventos.cs" />
+    <Compile Include="Domain\Entity\Formacoes.cs" />
+    <Compile Include="Domain\Entity\Grupos.cs" />
+    <Compile Include="Domain\Enum\Status.cs" />
+    <Compile Include="Domain\Enum\TipoAula.cs" />
+    <Compile Include="Domain\Enum\TipoEnsino.cs" />
+    <Compile Include="IContracts\IContractsDomainServices\IContractsDomainServicesBases\IContractsDomainServicesBase.cs" />
+    <Compile Include="IContracts\IContractsDomainServices\IContractsDomainServicesEntity\IContractsDomainServicesAdministradores\IContractsDomainServicesAdministrador.cs" />
+    <Compile Include="IContracts\IContractsDomainServices\IContractsDomainServicesEntity\IContractsDomainServicesCategorias\IContractsDomainServicesCategoria.cs" />
+    <Compile Include="IContracts\IContractsDomainServices\IContractsDomainServicesEntity\IContractsDomainServicesCursos\IContractsDomainServicesCurso.cs" />
+    <Compile Include="IContracts\IContractsDomainServices\IContractsDomainServicesEntity\IContractsDomainServicesEventos\IContractsDomainServicesEvento.cs" />
+    <Compile Include="IContracts\IContractsDomainServices\IContractsDomainServicesEntity\IContractsDomainServicesFormacoes\IContractsDomainServicesFormacao.cs" />
+    <Compile Include="IContracts\IContractsDomainServices\IContractsDomainServicesEntity\IContractsDomainServicesGrupos\IContractsDomainServicesGrupo.cs" />
+    <Compile Include="IContracts\IContractsSGBD\IContractsSGBD\IContractsSGBDBases\IContractsSGBDBase.cs" />
+    <Compile Include="IContracts\IContractsSGBD\IContractsSGBD\IContractsSGBDEntity\IContractsSGBDAdministradores\IContractsSGBDAdministrador.cs" />
+    <Compile Include="IContracts\IContractsSGBD\IContractsSGBD\IContractsSGBDEntity\IContractsSGBDCategorias\IContractsSGBDCategoria.cs" />
+    <Compile Include="IContracts\IContractsSGBD\IContractsSGBD\IContractsSGBDEntity\IContractsSGBDCursos\IContractsSGBDCurso.cs" />
+    <Compile Include="IContracts\IContractsSGBD\IContractsSGBD\IContractsSGBDEntity\IContractsSGBDEventos\IContractsSGBDEvento.cs" />
+    <Compile Include="IContracts\IContractsSGBD\IContractsSGBD\IContractsSGBDEntity\IContractsSGBDFormacoes\IContractsSGBDFormacao.cs" />
+    <Compile Include="IContracts\IContractsSGBD\IContractsSGBD\IContractsSGBDEntity\IContractsSGBDGrupos\IContractsSGBDGrupo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="InfoAlexandre.Domain.ruleset" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
