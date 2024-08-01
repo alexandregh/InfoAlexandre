@@ -1,5 +1,5 @@
 # InfoAlexandre
-### Sistema Web - InfoAlexandre
+### Sistema de Portfólio Web - InfoAlexandre
 ###### Versão 1.0
 
 ###### Descrição:
